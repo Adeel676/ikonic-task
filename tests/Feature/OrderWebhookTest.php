@@ -2,15 +2,16 @@
 
 namespace Tests\Feature;
 
-use App\Services\AffiliateService;
-use App\Services\OrderService;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
+use App\Services\OrderService;
+use App\Services\AffiliateService;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
 
 class OrderWebhookTest extends TestCase
 {
-    use RefreshDatabase, WithFaker;
+    use RefreshDatabase, WithFaker ;
 
     public function test_process_order()
     {
